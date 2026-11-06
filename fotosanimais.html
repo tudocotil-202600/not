@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fauna Brasileira</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/webp" href="imagens/x-icon.webp">
+
+  <style>
+   
+    body.pagina-animais {
+      background-image: linear-gradient(rgba(10, 25, 15, 0.45), rgba(10, 25, 15, 0.45)), url('imagens/animais/fundo.jpg'); 
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f0f4f1;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    
+    .header-tematico {
+      background-color: rgba(18, 43, 27, 0.85);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #4caf50;
+      box-shadow: 0px 4px 12px #000000; 
+    }
+
+    .header-tematico h1 {
+      margin: 0px 0px 10px 0px;
+      font-size: 50px;
+      color: #e2f3e4;
+      text-shadow: 2px 2px 4px #000000; 
+    }
+
+    
+    .menu-tematico a {
+      color: #c8e6c9;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0px 12px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: all 0.3s ease; 
+      display: inline-block;
+    }
+
+    .menu-tematico a:hover,
+    .menu-tematico a.ativo {
+      background-color: #2e7d32;
+      color: #ffffff;
+      box-shadow: 0px 2px 8px #000000; 
+    }
+
+    
+    .boas-vindas {
+      text-align: center;
+      margin: 30px 20px 10px 20px;
+      text-shadow: 1px 1px 3px #000000; 
+    }
+
+    .boas-vindas h2 {
+      font-size: 32px;
+      color: #ffffff;
+    }
+
+    
+    .flex-animais {
+      text-align: center;   
+      padding: 20px 40px 40px 40px;
+    }
+
+    
+    .card-animal {
+      display: inline-block;
+      vertical-align: top;
+      width: 280px;
+      margin: 12px;
+      background-color: rgba(20, 35, 25, 0.75); 
+      border: 1px solid rgba(255, 255, 255, 0.15);  
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 8px 20px #000000; 
+      transition: all 0.3s ease; 
+    }
+
+    
+    .card-animal:hover {
+      transform: translateY(-8px); 
+      box-shadow: 0px 12px 25px #000000; 
+      background-color: rgba(25, 45, 30, 0.85);
+    }
+
+    .card-animal img {
+      width: 100%;
+      height: 190px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2); 
+
+
+    }
+
+
+    @keyframes moverimagem {
+      0%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(8px);
+      }
+      100%{
+        transform: translateY(0px);
+      }
+    }
+
+    .card-animal:hover img{
+      animation-name: moverimagem;
+      animation-duration: 2.0s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+
+    }
+
+    .card-animal h3 {
+      margin: 12px 0px 6px 0px;
+      color: #a5d6a7;
+    }
+
+    .card-animal p {
+      font-size: 14px;
+      line-height: 20px;
+      color: #e0e0e0;
+    }
+
+    /* Botão Voltar ao Topo */
+    .fim {
+      text-align: center;
+      padding: 20px 0px 50px 0px;
+    }
+  </style>
+</head>
+<body class="pagina-animais">
+
+  <header class="header-tematico">
+    <h1>Expedição Fauna Brasileira</h1>
+    <nav class="menu-tematico">
+      <a href="index.html">Início</a>
+      <a href="contatonovo.html">Contato</a>
+      <a href="animais.html" class="ativo">Animais</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="topo" class="boas-vindas">
+      <h2>Galeria da Vida Selvagem</h2>
+      <p>Explore a diversidade dos animais do nosso ecossistema.</p>
+    </section>
+
+    <section class="flex-animais">
+      <div class="card-animal">
+        <img src="imagens/animais/araras.jpg" alt="Arara-canindé">
+        <h3>Arara-canindé</h3>
+        <p>Aves muito coloridas e sociáveis da fauna brasileira.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/caprivarias.jpg" alt="Capivaras">
+        <h3>Capivaras</h3>
+        <p>O maior roedor do mundo, vive próximo a corpos d'água.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/lobodograu.jpg" alt="Lobo-guará">
+        <h3>Lobo-guará</h3>
+        <p>Maior canídeo da América do Sul, típico do Cerrado.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/boladefutboll.jpg" alt="Tatu-bola">
+        <h3>Tatu-bola</h3>
+        <p>Espécie endêmica do Brasil que se enrola em formato de bola.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/corujaquefazburaco.jpg" alt="Coruja-bochechuda">
+        <h3>Coruja-bochechuda</h3>
+        <p>Conhecida por habitar buracos no solo em campos e pastos.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/harpia.jpg" alt="Harpia">
+        <h3>Harpia</h3>
+        <p>Uma das maiores e mais poderosas aves de rapina do mundo.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/onça.jpg" alt="Onça-pintada">
+        <h3>Onça-pintada</h3>
+        <p>O maior felino das Américas e topo da cadeia alimentar.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/anta.jpg" alt="Anta">
+        <h3>Anta</h3>
+        <p>O maior mamífero terrestre da América do Sul.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/arraia-amazonica.jpg" alt="Arraia gigante de água doce">
+        <h3>Arraia de Água Doce</h3>
+        <p>Habitante dos rios amazônicos com ferrão defensivo na cauda.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/lacoste _açu.jpg" alt="Jacaré-açu">
+        <h3>Jacaré-açu</h3>
+        <p>O maior réptil da Amazônia, podendo passar de 4 metros.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/macaquito.jpg" alt="Mico-leão-preto">
+        <h3>Mico-leão-preto</h3>
+        <p>Espécie de primata endêmica do estado de São Paulo e ameaçada de extinção.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/pirarucu.jpg" alt="Pirarucu">
+        <h3>Pirarucu</h3>
+        <p>Um dos maiores peixes de água doce do planeta, nativo da Amazônia.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/tuiuiu.jpg" alt="Tuiuiú">
+        <h3>Tuiuiú</h3>
+        <p>Ave símbolo do Pantanal, famosa por seu grande porte e pescoço vermelho.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/tucano.jpg" alt="Tucano">
+        <h3>Tucano</h3>
+        <p>Famoso por seu enorme bico colorido e leveza em voo.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/peixeboi.jpg" alt="Peixe-boi">
+        <h3>Peixe-boi</h3>
+        <p>Doces mamíferos aquáticos que vivem em rios e litorais brasileiros.</p>
+      </div>
+
+      <div class="card-animal">
+        <img src="imagens/animais/tubarão_azul.jpg" alt="Tubarão-azul">
+        <h3>Tubarão-azul</h3>
+        <p>Predador marinho característico por seu tom azul vibrante.</p>
+      </div>
+    </section>
+
+    <div class="fim">
+      <nav class="menu-tematico">
+        <a href="#topo">Voltar ao topo</a>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>

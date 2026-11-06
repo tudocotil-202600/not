@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverNews</title>
+    <link rel="icon" type="image/png" href="imagens/icone.png">
+
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-size: 16px;                                             
+            line-height: 1.6;                                           
+            color: #333333;                                             
+            background: linear-gradient(135deg, #e0f7fa 0%, #9fe3e3 100%); 
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;            
+            border-radius: 12px;      
+            border: 1px solid #dcdcdc; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-div {
+            text-align: center;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 5px solid #690ee6;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background-color: #fdfdfd;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        h1 {
+            color: #690ee6;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); 
+            text-transform: uppercase;                   
+        }
+
+        h2 {
+            font-weight: 700;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+
+        
+        ul.menu-categorias {
+            list-style-type: none; 
+            padding: 0;
+            margin: 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        ul.menu-categorias li a {
+            display: inline-block;
+            background-color: #690ee6;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        
+        ul.menu-categorias li a:hover {
+            background-color: #4b09ab; 
+        }
+
+        a {
+            color: #0066cc;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #003366;
+            text-decoration: underline;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #09154f;
+            color: #ffffff;
+        }
+
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        
+        .img-center {
+            display: block;
+            margin: 15px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        
+        details {
+            background-color: #f0f7ff;
+            border: 1px solid #cce3ff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header-div">
+            <h1 id="topo">🌟 Silver News</h1>
+            <p>
+                Bem-vindo ao site de <b>notícias positivas</b>.<br>
+                Aqui você encontra histórias <i>inspiradoras</i> e informações <u>que fazem a diferença</u>.
+            </p>
+        </div>
+
+        <div><audio class="player-invertido" controls autoplay style="display: block; margin-left: auto; margin-right: auto;">
+        <source src="musica/Øneheart, reidenshi - snowfall.mp3" type="audio/mpeg">
+    </audio></div>
+
+        <hr>
+
+
+        <h2>Notícia Principal</h2>
+        
+<video width="100%" controls style="max-width: 600px; display: block; margin: 15px auto; border-radius: 8px;">
+    <source src="video/WhatsApp Video 2026-10-12 at 11.40.35.mp4" type="video/mp4">
+    
+</video>
+        <p>
+           Ataque hacker invade sistema da Defesa Civil e dispara alerta falso de "misantropia" para milhões no Brasil, veja a notícia logo acima.
+        </p>
+
+        <h2>Categorias</h2>
+        
+        <ul class="menu-categorias">
+            <li><a href="#ANIMAIS">Animais</a></li>
+            <li><a href="#ciencia">Ciência</a></li>
+            <li><a href="#saude">Saúde</a></li>
+            <li><a href="#politica">Política</a></li>
+            <li><a href="#boa-acao">Boa Ação</a></li>
+            <li><a href="#lazer">Lazer</a></li>
+        </ul>
+
+        <h2>Notícias da Semana</h2>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Notícia</th>
+            </tr>
+            <tr>
+                <td>Política</td>
+                <td>Suécia implementou nova licença</td>
+            </tr>
+            <tr>
+                <td>Saúde</td>
+                <td>Novo remédio para enxaqueca</td>
+            </tr>
+            <tr>
+                <td>Animais</td>
+                <td>Arara-vermelha rara volta a ser registrada</td>
+            </tr>
+        </table>
+
+        <br>
+        <a href="contatonovo.html">Página de Contato</a>
+
+        <hr>
+
+        <details>
+            <summary>Curiosidade do dia</summary>
+            Em média, uma pessoa anda o equivalente a três vezes ao redor do mundo durante a vida.
+        </details>
+
+        <details>
+            <summary>Mensagem do dia</summary>
+            "Mas Deus prova o seu próprio amor para conosco, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores." Romanos 5:8<br>
+            "A jornada mais longa começa com um único passo." — Lao Tsé
+        </details>
+
+        
+        <div class="card" id="ANIMAIS">
+            <h2 style="color: #4CAF50;">ANIMAIS</h2>
+            <img src="imagens/animal.jpeg" alt="Arara-vermelha" class="img-center" width="400">
+            <p>
+                A arara-vermelha-grande (Ara chloropterus) voltou a se reproduzir na Mata Atlântica após quase 200 anos de extinção da espécie no litoral brasileiro. A informação foi divulgada pelo Ministério do Meio Ambiente e Mudança do Clima (MMA).<br>
+                Para mais informações: <a href="https://www.metropoles.com/brasil/arara-vermelha-volta-a-se-reproduzir-na-mata-atlantica-apos-quase-200-anos" target="_blank" rel="noopener noreferrer">Leia a matéria completa</a><br>
+                veja agumas fotos de animais da nossa fauna <a href="fotosanimais.html" target="_blank" rel="noopener noreferrer">aperte aqui</a>
+            </p>
+            
+        </div>
+
+        <div class="card" id="ciencia">
+            <h2 style="color: #2196F3;">CIÊNCIA</h2>
+            <img src="imagens/ciencia.jpeg" alt="Ciência e imunoterapia" class="img-center" width="400">
+            <p>
+                A parceria entre o Ministério da Saúde, o Instituto Butantan e a farmacêutica MSD prevê a fabricação do pembrolizumabe no Brasil, com o objetivo de ampliar o acesso ao tratamento no Sistema Único de Saúde (SUS).<br>
+                Para mais informações: <a href="https://noticiapreta.com.br/butantan-produzira-imunoterapia-contra-40-tipos-de-cancer-para-o-sus/" target="_blank" rel="noopener noreferrer">Leia a matéria completa</a>
+            </p>
+        </div>
+
+        <div class="card" id="saude">
+            <h2 style="color: #F44336;">SAÚDE</h2>
+            <img src="imagens/saude.jpeg" alt="Saúde e medicamentos" class="img-center" width="400">
+            <p>
+                A Agência Nacional de Vigilância Sanitária (Anvisa) aprovou o registro do Nurtec ODT. O medicamento é da Pfizer e leva como princípio ativo o hemissulfato de rimegepanto sesqui-hidratado, voltado ao tratamento direto da enxaqueca.<br>
+                Para mais informações: <a href="https://www.terra.com.br/vida-e-estilo/saude/anvisa-aprova-novo-medicamento-para-tratamento-e-prevencao-de-crises-de-enxaqueca,bb4a1fea4631cac07e53d7721d10afb64cs5vhsc.html" target="_blank" rel="noopener noreferrer">Leia a matéria completa</a>
+            </p>
+        </div>
+
+        <div class="card" id="politica">
+            <h2 style="color: #673AB7;">POLÍTICA</h2>
+            <img src="imagens/politica.jpeg" alt="Política e licença parental" class="img-center" width="400">
+            <p>
+                As novas regras da licença parental na Suécia permitem que os pais transfiram até 45 dias da sua licença paga para alguém que não seja o tutor legal da criança. Para pais solteiros, podem ser transferidos até 90 dias por filho.<br>
+                Para mais informações: <a href="https://pt.euronews.com/next/2024/09/26/avos-na-suecia-podem-agora-ser-pagos-para-tomar-conta-dos-netos" target="_blank" rel="noopener noreferrer">Leia a matéria completa</a>
+            </p>
+        </div>
+
+        <div class="card" id="boa-acao">
+            <h2 style="color: #FF9800;">BOA AÇÃO</h2>
+            <img src="imagens/boa ação.jpeg" alt="Boa ação" class="img-center" width="400">
+            <p>
+                Mael, como é conhecido, ganhou uma televisão de 50 polegadas e também um ano de internet gratuita, além de um celular.<br>
+                Para mais informações: <a href="https://www.bandab.com.br/variedades/internet/menino-de-8-anos-viraliza-ao-ser-flagrado-assistindo-tv-na-vizinha/" target="_blank" rel="noopener noreferrer">Leia a matéria completa</a>
+            </p>
+        </div>
+
+        <div class="card" id="lazer">
+            <h2 style="color: #FFC107;">LAZER</h2>
+            <img src="imagens/Lazer.jpeg" alt="Espaço das Águas" class="img-center" width="600">
+            <p>
+                Com 330 mil m² de extensão, o Espaço das Águas é a área do Mundo das Crianças cuja principal estrela é a natureza. Composto por atrações para toda a família.<br>
+                Para mais informações: <a href="https://mundodascriancasjundiai.com.br/atracoes/espaco-das-aguas/" target="_blank" rel="noopener noreferrer">Acesse o site oficial</a><br><br>
+                <b>Localização:</b><br><br> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.3620653950975!2d-46.905401824891634!3d-23.1587262790786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf27002f9a5861%3A0xfb5949c0e8ef72e2!2zRXNwYcOnbyBkYXMgw4FndWFz!5e1!3m2!1spt-BR!2sbr!4v1780689366978!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+        </div>
+
+        <br>
+        <a href="#topo">⬆️ Voltar ao topo</a>
+    </div>
+
+</body>
+</html>
